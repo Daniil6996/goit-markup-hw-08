@@ -1,0 +1,43 @@
+.examples {
+  position: relative;
+}
+
+.examples-gallery {
+  display: flex;
+  justify-content: space-between;
+}
+
+.example-gallery {
+  display: flex;
+  justify-content: space-between;
+}
+
+.examples-overlay {
+  position: relative;
+}
+
+.examples-content {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 370px;
+  height: 70px;
+  background-color: rgba(47, 48, 58, 0.8);
+}
+
+.examples-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 205px;
+  height: 16px;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: var(--primary-text-color);
+}

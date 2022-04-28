@@ -1,0 +1,46 @@
+body {
+  background-color: var(--primary-text-color);
+  color: var(--secondary-text-color);
+  font-family: var(--primary-font-family);
+  letter-spacing: 0.02em;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+ul,
+ol {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+img {
+  display: block;
+}
+
+address {
+  font-style: normal;
+}
+
+* {
+  text-decoration: none;
+  list-style-type: none;
+}
+
+textarea {
+  resize: none;
+}
+
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
