@@ -1,16 +1,7 @@
-// .nav-list {
-//   display: none;
-// }
-
-// .contact-link {
-//   display: none;
-// }
-
 .header {
   position: relative;
   padding-top: 16px;
   padding-bottom: 16px;
-  background-color: #fff;
 }
 
 .header__container {
@@ -19,6 +10,7 @@
   align-items: center;
 }
 
+// 0 - 767px
 @media screen and (max-width: 767px) {
   .nav-list {
     display: none;
@@ -50,7 +42,7 @@
     width: 100%;
     height: 100vh;
     overflow: auto;
-    background-color: bisque;
+    background-color: #fff;
 
     opacity: 0;
     visibility: hidden;
@@ -73,14 +65,84 @@
     border: none;
     padding: 0;
     line-height: 0;
+
+    &:hover {
+      fill: var(--primary-color);
+    }
   }
 
   .mobile-menu__container {
     position: relative;
     padding-top: 48px;
+    padding-bottom: 302px;
+    padding-left: 40px;
+  }
+
+  .burger-nav__item:not(:last-child) {
+    padding-bottom: 32px;
+  }
+
+  .burger-nav__link {
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 47px;
+    letter-spacing: 0.02em;
+    color: #212121;
+
+    &:hover {
+      color: var(--primary-color);
+    }
+  }
+
+  .contact-menu-container {
+    padding-left: 40px;
+    padding-bottom: 48px;
+  }
+
+  .menu-contact {
+    padding-bottom: 64px;
+  }
+
+  .menu-contact__link-tel {
+    font-weight: 500;
+    font-size: 34px;
+    line-height: 1.17;
+
+    letter-spacing: 0.02em;
+    color: var(--primary-color);
+  }
+
+  .menu-contact__item:not(:last-child) {
+    padding-bottom: 30px;
+  }
+  .menu-contact__link-email {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 1.16;
+    letter-spacing: 0.02em;
+
+    color: var(--secondary-text-color);
+  }
+
+  .menu-social {
+    display: flex;
+  }
+
+  .menu-social__link {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.22;
+
+    letter-spacing: 0.02em;
+    color: var(--primary-color);
+  }
+
+  .menu-social__item {
+    margin-right: 20px;
   }
 }
 
+// 768px +
 @media screen and (min-width: 768px) {
   .mobile-menu-btn {
     display: none;
@@ -89,6 +151,18 @@
   .mobile-menu {
     display: none;
   }
+
+  // 1200px +
+  @media screen and (min-width: 1200px) {
+  }
+
+  // .nav-list {
+  //   display: flex;
+  // }
+
+  // .contact-link {
+  //   display: block;
+  // }
 }
 
 // .header {
