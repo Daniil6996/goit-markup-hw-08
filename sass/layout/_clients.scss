@@ -24,6 +24,7 @@
 
 @media screen and (max-width: 1199px) {
   .clients-list {
+    margin-left: calc(-10px * (-1));
     margin-top: calc(30px * (-1));
   }
 
