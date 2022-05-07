@@ -400,6 +400,13 @@ textarea {
   text-decoration: underline;
 }
 
+@media screen and (max-width: 1199px) {
+  .backdrop {
+    padding: 73px 15px;
+    overflow-y: scroll;
+  }
+}
+
 .header {
   position: relative;
   padding-top: 16px;
@@ -672,8 +679,6 @@ textarea {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 170px;
-  height: 92px;
   border: 1px solid #afb1b8;
   border-radius: 4px;
   fill: #afb1b8;
@@ -692,6 +697,10 @@ textarea {
 
 @media screen and (max-width: 1199px) {
   .clients-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -30px;
+    margin-top: -30px;
     margin-left: calc(-10px * (-1));
     margin-top: calc(30px * (-1));
   }
@@ -702,13 +711,16 @@ textarea {
 }
 
 .footer-container {
-  display: flex;
-  align-items: baseline;
+  padding-bottom: 60px;
+}
+
+.footer-social-container {
+  margin-bottom: 60px;
 }
 
 .footer-list {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   margin-top: 20px;
 }
 
@@ -718,17 +730,13 @@ textarea {
   font-size: 14px;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-}
-
-.footer-social-container {
-  margin-left: 70px;
-  width: 206px;
+  padding-top: 60px;
 }
 
 .footer {
   background-color: #2f303a;
+  text-align: center;
   padding-top: 60px;
-  padding-bottom: 60px;
 }
 
 .footer-list-link {
@@ -746,6 +754,10 @@ textarea {
   background-color: var(--primary-color);
 }
 
+.footer-list-item:not(:last-child) {
+  margin-right: 10px;
+}
+
 .footer-list-icon {
   fill: var(--primary-text-color);
 }
@@ -760,7 +772,6 @@ textarea {
 
 .geolocation {
   margin-bottom: 9px;
-  margin-top: 20px;
 }
 
 .footer-link-mailto {
@@ -788,10 +799,6 @@ textarea {
   color: var(--primary-color);
 }
 
-.form-field-footer {
-  margin-left: 93px;
-}
-
 .form-field-footer label {
   font-weight: 700;
   font-size: 14px;
@@ -802,7 +809,7 @@ textarea {
 }
 
 .form-field-footer input {
-  width: 358px;
+  width: 100%;
   height: 50px;
   display: flex;
   background-color: #2f303a;
@@ -830,7 +837,7 @@ textarea {
   align-items: center;
   padding-left: 29px;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  margin-left: 12px;
+  margin-top: 20px;
 }
 
 .btn-subscribe:hover {
@@ -839,12 +846,18 @@ textarea {
 
 .footer-form-item {
   display: flex;
-  justify-content: space-evenly;
+  flex-direction: column;
   align-items: center;
   margin-top: 20px;
 }
 
-.btn-subscribe-icon {
-  margin-left: 10px;
+.footer-logo_theme_light {
+  display: block;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.footer-address {
+  text-align: center;
 }
 /*# sourceMappingURL=main.css.map */

@@ -205,3 +205,10 @@
   color: var(--secondary-color);
   text-decoration: underline;
 }
+
+@media screen and (max-width: 1199px) {
+  .backdrop {
+    padding: 73px 15px;
+    overflow-y: scroll;
+  }
+}
