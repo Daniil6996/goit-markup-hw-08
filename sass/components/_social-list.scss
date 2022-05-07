@@ -25,6 +25,11 @@
 
 .social-list {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  // justixfy-content: space-between;
   margin-top: 16px;
+}
+
+.social-list-item:not(:last-child) {
+  margin-right: 10px;
 }
