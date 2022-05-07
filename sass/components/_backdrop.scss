@@ -212,3 +212,16 @@
     overflow-y: scroll;
   }
 }
+
+@media screen and (max-width: 1199px) {
+  .modal {
+    position: relative;
+    padding: 40px;
+  }
+}
+
+@media screen and (max-width: 1199px) and (min-width: 768px) {
+  .modal {
+    max-width: 450px;
+  }
+}

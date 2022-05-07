@@ -39,11 +39,11 @@
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
+    width: 100vw;
     height: 100vh;
     overflow: auto;
     background-color: #fff;
-
+    z-index: 1;
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
@@ -176,9 +176,9 @@
 //   justify-content: space-between;
 // }
 
-// .header-border {
-//   border: 1px solid #ececec;
-// }
+.header-border {
+  border: 1px solid #ececec;
+}
 
 // .nav-list__link {
 //   font-weight: 500;
