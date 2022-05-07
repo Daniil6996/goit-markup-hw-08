@@ -140,4 +140,10 @@
     padding-bottom: 56px;
   }
 }
+
+@media screen and (min-width: 1200px) {
+  .portfolio-card {
+    flex-basis: calc(100% / 3 - var(--card-set-gap));
+  }
+}
 /*# sourceMappingURL=portfolio.css.map */
