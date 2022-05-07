@@ -680,9 +680,19 @@ textarea {
   border-color: var(--primary-color);
 }
 
-.clietns-list {
+.clients-list {
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+@media screen and (max-width: 1199px) {
+  .clients-list {
+    margin-left: calc(30px * (-1));
+    margin-top: calc(30px * (-1));
+  }
+  .employees-photo {
+    width: 450px;
+  }
 }
 
 .footer-container {
