@@ -32,14 +32,25 @@
 
 .button-list {
   display: flex;
-  // justify-content: center;
   flex-wrap: wrap;
+}
+
+@media screen and (max-width: 767px) {
+  .button-list {
+    margin-bottom: 40px;
+  }
 }
 
 @media screen and (min-width: 768px) {
   .button-list {
     justify-content: center;
     margin-bottom: 30px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    .button-list {
+      margin-bottom: 50px;
+    }
   }
 
   .portfolio-list-card {
@@ -87,9 +98,9 @@
 //   }
 // }
 
-.photo-cards {
-  margin-top: 80px;
-}
+// .photo-cards {
+//   margin-top: 80px;
+// }
 
 .container-portfolio-overlay {
   position: relative;

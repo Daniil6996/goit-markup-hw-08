@@ -10,6 +10,10 @@
   align-items: center;
 }
 
+.burger-nav-list {
+  margin-bottom: calc(100vh - 466px);
+}
+
 // 0 - 767px
 @media screen and (max-width: 767px) {
   .nav-list {
@@ -55,6 +59,7 @@
     opacity: 1;
     visibility: visible;
     pointer-events: auto;
+    position: fixed;
   }
 
   .mobile-menu__close-btn {
@@ -74,7 +79,6 @@
   .mobile-menu__container {
     position: relative;
     padding-top: 48px;
-    padding-bottom: 302px;
     padding-left: 40px;
   }
 
@@ -126,6 +130,7 @@
 
   .menu-social {
     display: flex;
+    flex-wrap: wrap;
   }
 
   .menu-social__link {
